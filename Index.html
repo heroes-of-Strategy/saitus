@@ -72,9 +72,9 @@
     <script>
         // Set the dates we're counting down to
         const targetDates = [
-            new Date("2025-09-23T00:00:00").getTime(),
-            new Date("2025-01-19T00:00:00").getTime(),
-            new Date("2025-05-05T00:00:00").getTime(),
+            new Date("2025-09-23T00:00").getTime(),
+            new Date("2025-01-19T00:00").getTime(),
+            new Date("2025-05-05T00:00").getTime(),
             new Date("2025-05-24T00:00:00").getTime(),
             new Date("2025-06-29T00:00:00").getTime(),
             new Date("2025-09-19T00:00:00").getTime()
@@ -113,7 +113,7 @@
 
                 // Display the countdown for each target date
                 document.getElementById("countdown" + (index + 1)).innerHTML = 
-                    months + " Months " + days + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
+                    months + " Months " + days + " Days " + hours + " Hours " + minutes + " Minutes "; //+ seconds + " Seconds ";
 
                 // If the countdown is over, display some text
                 if (distance < 0) {
